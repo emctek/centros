@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ListadepartamentosService } from './listadepartamentos.service';
 
 @Component({
   selector: 'app-departamentos',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DepartamentosPage implements OnInit {
 
-  constructor() { }
+  listadep = [];
+
+  constructor(private  listadepartamentos: ListadepartamentosService, private routerc: Router) { }
 
   ngOnInit() {
+   this.listadep = this.listadepartamentos.obtenerlistadep();
+  }
+
+  onDepartamento() {
+
+
   }
 
 }

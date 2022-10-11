@@ -7,6 +7,11 @@ import { IonicModule } from '@ionic/angular';
 import { DepartamentosPageRoutingModule } from './departamentos-routing.module';
 
 import { DepartamentosPage } from './departamentos.page';
+import { ElectronicaComponent } from './electronica/electronica.component';
+import { FarmaciaComponent } from './farmacia/farmacia.component';
+import { LineablancaComponent } from './lineablanca/lineablanca.component';
+import { MascotasComponent } from './mascotas/mascotas.component';
+import { VinosylicoresComponent } from './vinosylicores/vinosylicores.component';
 
 @NgModule({
   imports: [
@@ -15,6 +20,6 @@ import { DepartamentosPage } from './departamentos.page';
     IonicModule,
     DepartamentosPageRoutingModule
   ],
-  declarations: [DepartamentosPage]
+  declarations: [DepartamentosPage,ElectronicaComponent,FarmaciaComponent,LineablancaComponent,MascotasComponent,VinosylicoresComponent]
 })
 export class DepartamentosPageModule {}

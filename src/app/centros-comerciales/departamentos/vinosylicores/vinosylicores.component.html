@@ -1,0 +1,14 @@
+<ion-card *ngFor="let productosvinlic of  listavinosylicores">
+
+  <img width="250" height="200" alt="Silhouette of mountains" [src]="productosvinlic.imagen" />
+
+  <ion-card-header>
+    <ion-card-subtitle>{{productosvinlic.producto}}</ion-card-subtitle>
+    <ion-card-title>Precio {{productosvinlic.precio}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    {{productosvinlic.descripcion}}
+  </ion-card-content>
+
+</ion-card>

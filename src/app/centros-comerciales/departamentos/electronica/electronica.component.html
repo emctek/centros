@@ -1,0 +1,14 @@
+<ion-card *ngFor="let productoselec of  listaelectronica">
+
+  <img width="250" height="200" alt="Silhouette of mountains" [src]="productoselec.imagen" />
+
+  <ion-card-header>
+    <ion-card-subtitle>{{productoselec.producto}}</ion-card-subtitle>
+    <ion-card-title>Precio {{productoselec.precio}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    {{productoselec.descripcion}}
+  </ion-card-content>
+
+</ion-card>

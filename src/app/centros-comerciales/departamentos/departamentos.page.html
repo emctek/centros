@@ -6,4 +6,31 @@
 
 <ion-content>
 
+  <ion-list>
+    <ion-item *ngFor="let departamentos of listadep">
+      <ion-icon slot="start" name="chevron-forward-outline"></ion-icon>
+      <ion-avatar slot="start">
+        <img [src]="departamentos.imagen" />
+      </ion-avatar>
+      <ion-label>{{departamentos.nombre}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+
+
+
+  <ion-list>
+    <ion-item>
+      <ion-select interface="popover" placeholder="Seleccione Departamento">
+        <ion-select-option *ngFor="let dep of listadep" [value]="dep.id">
+          <ion-img width="10" height="10" [src]="dep.imgagen"></ion-img>
+          {{dep.nombre}}
+        </ion-select-option>
+
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <app-electronica></app-electronica>
+
 </ion-content>

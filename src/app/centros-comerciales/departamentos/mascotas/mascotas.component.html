@@ -1,0 +1,14 @@
+<ion-card *ngFor="let productosmas of  listamascotas">
+
+  <img width="250" height="200" alt="Silhouette of mountains" [src]="productosmas.imagen" />
+
+  <ion-card-header>
+    <ion-card-subtitle>{{productosmas.producto}}</ion-card-subtitle>
+    <ion-card-title>Precio {{productosmas.precio}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    {{productosmas.descripcion}}
+  </ion-card-content>
+
+</ion-card>
