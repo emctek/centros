@@ -1,0 +1,7 @@
+{
+  "name": "centros",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
