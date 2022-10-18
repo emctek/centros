@@ -7,6 +7,8 @@ import { FarmaciaComponent } from './farmacia/farmacia.component';
 import { LineablancaComponent } from './lineablanca/lineablanca.component';
 import { MascotasComponent } from './mascotas/mascotas.component';
 import { VinosylicoresComponent } from './vinosylicores/vinosylicores.component';
+import { ProductosComponent } from './productos/productos.component';
+import { DetallesComponent } from './detalles/detalles.component';
 
 const routes: Routes = [
   {
@@ -34,6 +36,14 @@ const routes: Routes = [
   {
     path: 'vinosylicoresp',
     component: VinosylicoresComponent
+  },
+  {
+    path: 'productos',
+    component: ProductosComponent
+  },
+  {
+    path: 'productos/:id',
+    component: DetallesComponent
   }
 ];
 

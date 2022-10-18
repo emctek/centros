@@ -12,6 +12,8 @@ import { FarmaciaComponent } from './farmacia/farmacia.component';
 import { LineablancaComponent } from './lineablanca/lineablanca.component';
 import { MascotasComponent } from './mascotas/mascotas.component';
 import { VinosylicoresComponent } from './vinosylicores/vinosylicores.component';
+import { ProductosComponent } from './productos/productos.component';
+import { DetallesComponent } from './detalles/detalles.component';
 
 @NgModule({
   imports: [
@@ -20,6 +22,6 @@ import { VinosylicoresComponent } from './vinosylicores/vinosylicores.component'
     IonicModule,
     DepartamentosPageRoutingModule
   ],
-  declarations: [DepartamentosPage,ElectronicaComponent,FarmaciaComponent,LineablancaComponent,MascotasComponent,VinosylicoresComponent]
+  declarations: [DepartamentosPage,ElectronicaComponent,FarmaciaComponent,LineablancaComponent,MascotasComponent,VinosylicoresComponent,ProductosComponent,DetallesComponent]
 })
 export class DepartamentosPageModule {}

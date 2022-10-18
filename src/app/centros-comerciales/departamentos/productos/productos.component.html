@@ -1,0 +1,18 @@
+<ion-content>
+<ion-card *ngFor="let producto of  listasproductos">
+
+    <img width="250" height="200" alt="Silhouette of mountains" [src]="producto.imagen" />
+  
+    <ion-card-header>
+      <ion-card-subtitle>{{producto.producto}}</ion-card-subtitle>
+      <ion-card-title>Precio {{producto.precio}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{producto.descripcion}}
+    </ion-card-content>
+
+    <ion-button (click)="CargaD(producto.id)">DETALLES</ion-button>
+  
+  </ion-card>
+</ion-content>
