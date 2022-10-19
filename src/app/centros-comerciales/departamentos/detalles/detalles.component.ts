@@ -18,7 +18,7 @@ export class DetallesComponent implements OnInit {
 
     this.idr = this.rutaactual.snapshot.paramMap.get('id');
 
-    this.lproductoid = this.listaproducto.obtenerlistaelecid((this.idr - 1));
+    this.lproductoid = this.listaproducto.obtenerlistavinolicorid((this.idr - 1));
 
     console.log(this.lproductoid);
 

@@ -167,35 +167,35 @@ export class ListaproductosService {
       producto: 'Bacardi',
       precio: '4500$',
       descripcion: 'producto del departamento farmacia',
-      imagen: 'assets/vinoylicores/bacardi'
+      imagen: 'assets/vinosylicores/bacardi.jpg'
     },
     {
       id: 2,
       nombre: 'Champaña MOET',
       precio: '270$',
       descripcion: 'producto del departamento farmacia',
-      imagen: 'assets/vinoylicores/champanamoet.jpg'
+      imagen: 'assets/vinosylicores/champanamoet.jpg'
     },
     {
       id: 3,
       nombre: 'Tequila Circulo',
       precio: '680$',
       descripcion: 'producto del departamento farmacia',
-      imagen: 'assets/vinoylicores/tequilacirculo'
+      imagen: 'assets/vinosylicores/tequilacirculo.jpg'
     },
     {
       id: 4,
       nombre: 'Tequila Don Julio',
       precio: '704$',
       descripcion: 'producto del departamento farmacia',
-      imagen: 'assets/vinoylicores/tequiladonjulio.jpg'
+      imagen: 'assets/vinosylicores/tequiladonjulio.jpg'
     },
     {
       id: 5,
       nombre: 'Vino Ruby',
       precio: '112$',
       ddescripcion: 'producto del departamento farmacia',
-      imagen: 'assets/vinoylicores/vinoruby.jpg'
+      imagen: 'assets/vinosylicores/vinoruby.jpg'
     },
   ];
   constructor() {}
@@ -204,7 +204,7 @@ export class ListaproductosService {
     return this.listaelectronica;
   }
 
-  obtenerlistaelecid(id:number) {
+  obtenerlistaelecid(id: number) {
     return this.listaelectronica[id];
   }
 
@@ -222,6 +222,10 @@ export class ListaproductosService {
 
   obtenerlistavinolicor() {
     return this.listavinosylicores;
+  }
+
+  obtenerlistavinolicorid(id: number) {
+    return this.listavinosylicores[id];
   }
 
 }

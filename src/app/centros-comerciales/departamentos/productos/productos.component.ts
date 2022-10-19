@@ -14,17 +14,17 @@ export class ProductosComponent implements OnInit {
   listasproductos = [];
 
 
-  constructor(private  lista: ListaproductosService, private ruta:Router) { }
+  constructor(private  lista: ListaproductosService, private ruta: Router) { }
 
   ngOnInit( ) {
 
-   this.listasproductos= this.lista.obtenerlistaelec();
+   this.listasproductos= this.lista.obtenerlistavinolicor();
    console.log(this.listasproductos);
   }
 
-  CargaD(id:string){
-this.ruta.navigate(['centros-comerciales/departamentos/productos/', id])
-   
+  cargad(id: any){
+this.ruta.navigate(['centros-comerciales/departamentos/productos/', id]);
+
 
   }
 
