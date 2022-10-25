@@ -11,7 +11,11 @@ const routes: Routes = [
   {
     path: 'departamentos',
     loadChildren: () => import('./departamentos/departamentos.module').then( m => m.DepartamentosPageModule)
+  },  {
+    path: 'opciones',
+    loadChildren: () => import('./opciones/opciones.module').then( m => m.OpcionesPageModule)
   }
+
 ];
 
 @NgModule({
