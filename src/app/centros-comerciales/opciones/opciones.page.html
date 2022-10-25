@@ -15,15 +15,25 @@
           <ion-list>
             <ion-item>
               <ion-select (ionChange)="onEscoge($event)" interface="action-sheet" placeholder="Select fruit">
-
                 <ion-select-option *ngFor="let fru of frutas" value="{{fru}}">{{fru}}</ion-select-option>
-
               </ion-select>
             </ion-item>
           </ion-list>
 
         </ion-col>
-        <ion-col>2</ion-col>
+
+        <ion-col>
+
+          <ion-list>
+            <ion-item>
+              <ion-select (ionChange)="onSelecciona($event)" interface="action-sheet" placeholder="Select marcas" [multiple]="true">
+                <ion-select-option *ngFor="let mar of computadoras" value="{{mar}}">{{mar}}</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+
+        </ion-col>
+
         <ion-col>3</ion-col>
       </ion-row>
     </ion-grid>

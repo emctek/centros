@@ -6,18 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./opciones.page.scss'],
 })
 export class OpcionesPage implements OnInit {
+  frutas = ['naranjas', 'uvas', 'sandias', 'frasas', 'mangos', 'tunas'];
 
-frutas = ["naranjas","uvas","sandias","frasas","mangos","tunas"];
+  computadoras = ['lenovo', 'hp', 'acer', 'dell', 'lanix', 'toshiba'];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  onEscoge($event) {
+    console.log($event.target.value);
   }
 
-  onEscoge($event){
-
-  console.log($event.target.value);
-
+  onSelecciona($event) {
+    console.log($event.target.value);
   }
-
 }
