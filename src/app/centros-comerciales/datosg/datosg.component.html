@@ -1,0 +1,42 @@
+<ion-content>
+
+  <form  [formGroup]="datosgenerales">
+
+<ion-list>
+  <ion-item>
+    <ion-label>NOMBRE</ion-label>
+    <ion-input formControlName="nombre" placeholder="Enter text"></ion-input>
+    <ion-label *ngIf="datosgenerales.controls.nombre.invalid && datosgenerales.controls.nombre.touched">requerido</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>MATRICULA</ion-label>
+    <ion-input formControlName="matricula" type="number" placeholder="000"></ion-input>
+    <ion-label *ngIf="datosgenerales.controls.matricula.invalid && datosgenerales.controls.matricula.touched">requerido</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>CONTRASEÑA</ion-label>
+    <ion-input formControlName="contrasena" type="password" value="password"></ion-input>
+    <ion-label *ngIf="datosgenerales.controls.contrasena.invalid && datosgenerales.controls.contrasena.touched">requerido</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>CORREO</ion-label>
+    <ion-input formControlName="correo" type="email" placeholder="email@domain.com"></ion-input>
+    <ion-label *ngIf="datosgenerales.controls.correo.invalid && datosgenerales.controls.correo.touched">requerido</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>TELEFONO</ion-label>
+    <ion-input formControlName="telefono" type="tel" placeholder="888-888-8888"></ion-input>
+    <ion-label *ngIf="datosgenerales.controls.telefono.invalid && datosgenerales.controls.telefono.touched">requerido</ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-button [disabled]="!datosgenerales.valid">Click</ion-button>
+
+
+</form>
+
+</ion-content>

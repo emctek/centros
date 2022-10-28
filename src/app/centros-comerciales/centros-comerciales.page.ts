@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 import { ListacentroscomercialService } from './listacentroscomercial.service';
 
 @Component({
@@ -9,12 +10,14 @@ import { ListacentroscomercialService } from './listacentroscomercial.service';
 })
 export class CentrosComercialesPage implements OnInit {
 
+  aparece: boolean = false;
+
   listacent = [];
 
-  constructor(private  listacomerciales: ListacentroscomercialService, private router: Router) { }
+  constructor(private listacomerciales: ListacentroscomercialService, private router: Router) { }
 
   ngOnInit() {
-   this.listacent = this.listacomerciales.obtenerlistacomer();
+    this.listacent = this.listacomerciales.obtenerlistacomer();
   }
 
   onDep() {
@@ -24,4 +27,12 @@ export class CentrosComercialesPage implements OnInit {
 
   }
 
+  onBuscarA(validar: boolean) {
+
+    this.aparece = validar;
+
+    console.log(this.aparece);
+    
+
+  }
 }

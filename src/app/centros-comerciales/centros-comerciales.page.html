@@ -1,6 +1,12 @@
 <ion-header>
   <ion-toolbar>
+
     <ion-title>centroComercial</ion-title>
+
+    <ion-button (click)="onBuscarA(true)">BUSCAR</ion-button>
+
+    <ion-searchbar *ngIf="aparece" show-clear-button="always" clear-icon="trash-bin" value="Custom Clear Icon"></ion-searchbar>
+    
   </ion-toolbar>
 </ion-header>
 
@@ -15,6 +21,9 @@
       <ion-label>{{comerciales.nombre}}</ion-label>
     </ion-item>
   </ion-list>
+
+
+  <app-datosg></app-datosg>
 
 
 </ion-content>
