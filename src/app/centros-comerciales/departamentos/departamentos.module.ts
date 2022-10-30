@@ -22,6 +22,7 @@ import { DetallesComponent } from './detalles/detalles.component';
     IonicModule,
     DepartamentosPageRoutingModule
   ],
+  // eslint-disable-next-line max-len
   declarations: [DepartamentosPage,ElectronicaComponent,FarmaciaComponent,LineablancaComponent,MascotasComponent,VinosylicoresComponent,ProductosComponent,DetallesComponent]
 })
 export class DepartamentosPageModule {}

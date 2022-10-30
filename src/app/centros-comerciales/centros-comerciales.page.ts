@@ -10,7 +10,7 @@ import { ListacentroscomercialService } from './listacentroscomercial.service';
 })
 export class CentrosComercialesPage implements OnInit {
 
-  aparece: boolean = false;
+  aparece = false;
 
   listacent = [];
 
@@ -32,7 +32,6 @@ export class CentrosComercialesPage implements OnInit {
     this.aparece = validar;
 
     console.log(this.aparece);
-    
 
   }
 }
